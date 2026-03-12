@@ -8,6 +8,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
 
+The game gave incorrect hints. For example, the secret number was 68 and I had guessed 50 it would tell me to go lower. The hints were backwards. Also, another thing I noticed that was broken was that it gave me a score of -65 at the end when I was unable to guess. The score should be 0 at minimun. After finishing the game I noticed a 3rd bug which was the new game button would not work. It did not reset the attempts and I had to refresh the tab in order to play the game again.
 ---
 
 ## 2. How did you use AI as a teammate?

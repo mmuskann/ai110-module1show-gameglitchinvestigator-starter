@@ -35,9 +35,9 @@ def check_guess(guess, secret):
 
     try:
         if guess > secret:
-            return "Too High", "📈 Go HIGHER!"
+            return "Too High", "📈 Go HIGHER!" # FIXME: Logic breaks here
         else:
-            return "Too Low", "📉 Go LOWER!"
+            return "Too Low", "📉 Go LOWER!" # FIXME: Logic breaks here
     except TypeError:
         g = str(guess)
         if g == secret:
@@ -54,7 +54,7 @@ def update_score(current_score: int, outcome: str, attempt_number: int):
             points = 10
         return current_score + points
 
-    if outcome == "Too High":
+    if outcome == "Too High": # FIXME: Logic breaks here
         if attempt_number % 2 == 0:
             return current_score + 5
         return current_score - 5
@@ -132,12 +132,12 @@ with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
 if new_game:
-    st.session_state.attempts = 0
+    st.session_state.attempts = 0 # FIXME: Logic breaks here
     st.session_state.secret = random.randint(1, 100)
     st.success("New game started.")
     st.rerun()
 
-if st.session_state.status != "playing":
+if st.session_state.status != "playing": # FIXME: Logic breaks here
     if st.session_state.status == "won":
         st.success("You already won. Start a new game to play again.")
     else:

@@ -117,7 +117,7 @@ with col3:
 
 if new_game:
     st.session_state.attempts = 0 # FIXME: Logic breaks here
-    st.session_state.secret = random.randint(1, 100)
+    st.session_state.secret = random.randint(1, 100) # FIXME: Logic breaks here
     st.success("New game started.")
     st.rerun()
 
@@ -139,7 +139,7 @@ if submit:
     else:
         st.session_state.history.append(guess_int)
 
-        if st.session_state.attempts % 2 == 0:
+        if st.session_state.attempts % 2 == 0: # FIXME: Logic breaks here
             secret = str(st.session_state.secret)
         else:
             secret = st.session_state.secret

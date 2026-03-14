@@ -118,6 +118,7 @@ with col3:
 if new_game:
     st.session_state.attempts = 0 # FIXME: Logic breaks here
     st.session_state.secret = random.randint(1, 100) # FIXME: Logic breaks here
+    st.session_state.status = "playing" #FIX: Used Calude to fix logic by resetting game status to playing when new game is started
     st.success("New game started.")
     st.rerun()
 

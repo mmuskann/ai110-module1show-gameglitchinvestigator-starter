@@ -70,7 +70,7 @@ with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
 if new_game:
-    st.session_state.attempts = 0 # FIXME: Logic breaks here
+    st.session_state.attempts = 1 # FIX: Used Calude to fix logic by resetting attempt count to 1 when new game is started
     st.session_state.secret = random.randint(1, 100) # FIXME: Logic breaks here
     st.session_state.status = "playing" #FIX: Used Calude to fix logic by resetting game status to playing when new game is started
     st.success("New game started.")

@@ -17,6 +17,8 @@ The game gave incorrect hints. For example, the secret number was 68 and I had g
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
+I used Claude for this project. I occusanily used ChatGpt for some of the code I didn't understand. One example of a suggestion that Claude gave which was correct is the logic behind the check_guess was broken. It simily told me it was because of the signs and later helped me write test cases. One exampleof a suggestion it gave that was incoorect or misleading was weather the attemps should start from 0 or 1. I wasn't sure either myself because they both techailly made sense in my head. I verfied it by trying both suggestions and seeing which one worked.
+
 ---
 
 ## 3. Debugging and testing your fixes
@@ -25,6 +27,8 @@ The game gave incorrect hints. For example, the secret number was 68 and I had g
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
+
+I decided weather a byg was actually by running the app and trying to check if the bug was still there by trying different inputs and testing for the bug multiple times before I was 100% sure. I am not too familar with pytest but one test I ran was checking if guess_check fuction actually worked. After doing pytest I was sure the logic was correct and that bug no longer existed. Yes, Calude helped me deign the tests and ChatGpt helped me understand those test. I didn't uderstand what assert did so I simily asked ChatGpt and it told me. I made sure I knew exactly what each line in the test was doing.
 
 ---
 

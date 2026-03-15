@@ -66,9 +66,8 @@ def update_score(current_score: int, outcome: str, attempt_number: int): #FIX: R
     if outcome == "Too High": # FIXME: Logic breaks here
         if attempt_number % 2 == 0:
             return current_score + 5
-        return current_score - 5
-
+        return max(0, current_score - 5) #FIX: Used Calude to make sure score doesn't go negative
     if outcome == "Too Low":
-        return current_score - 5
+        return max(0, current_score - 5)  #FIX: Used Calude to make sure score doesn't go negative 
 
     return current_score

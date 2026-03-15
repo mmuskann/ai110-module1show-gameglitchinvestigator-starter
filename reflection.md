@@ -28,13 +28,15 @@ I used Claude for this project. I occusanily used ChatGpt for some of the code I
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
-I decided weather a byg was actually by running the app and trying to check if the bug was still there by trying different inputs and testing for the bug multiple times before I was 100% sure. I am not too familar with pytest but one test I ran was checking if guess_check fuction actually worked. After doing pytest I was sure the logic was correct and that bug no longer existed. Yes, Calude helped me deign the tests and ChatGpt helped me understand those test. I didn't uderstand what assert did so I simily asked ChatGpt and it told me. I made sure I knew exactly what each line in the test was doing.
+I decided weather a bug was actually by running the app and trying to check if the bug was still there by trying different inputs and testing for the bug multiple times before I was 100% sure. I am not too familar with pytest but one test I ran was checking if guess_check fuction actually worked. After doing pytest I was sure the logic was correct and that bug no longer existed. Yes, Calude helped me deign the tests and ChatGpt helped me understand those test. I didn't uderstand what assert did so I simily asked ChatGpt and it told me. I made sure I knew exactly what each line in the test was doing. 
 
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+
+If I am being honest, I myself am unsure exactly what Streamlit and state is even after looking it up. I am not familar with it at all and don't think I leanred much to anything about it. Since it was the first project I kind of found evertyhing confusin.
 
 ---
 
@@ -44,3 +46,5 @@ I decided weather a byg was actually by running the app and trying to check if t
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+One habit or strategy i wanted to use it to prompting by telling the exact file I am reffering to and explain a bit better to the ai what I mean. Something I would do differently next to work with AI on a coding task is read the code fully myself, then ask it to explain it, find the bug myself and then ask ai about it. This project changed the way I think about AI generated code is that it is great. It might be even better than what I could write and had great suggetions. 
